@@ -24,6 +24,6 @@
       "pre-deploy": ""
     },
     "scripts": {
-      "dev": "ls -l"
+      "dev": "php -S 0.0.0.0:${BLOCKLET_PORT:-${PORT:-3000}}"
     }
   }
