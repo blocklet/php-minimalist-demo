@@ -1,7 +1,7 @@
 {
     "name": "PHP-Minimalist-Demo",
     "description": "PHP Blocklet Demo",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "group": "dapp",
     "color": "primary",
     "public_url": "/",
@@ -12,16 +12,8 @@
     "keywords": [],
     "author": "ArcBlock",
     "main" : ".",
-    "engine": {
-      "interpreter": "",
-      "script": ".",
-      "args": []
-    },
     "capabilities": {
       "dynamicPathPrefix": false
-    },
-    "hooks": {
-      "pre-deploy": ""
     },
     "scripts": {
       "dev": "php -S 0.0.0.0:${BLOCKLET_PORT:-${PORT:-3000}}"
