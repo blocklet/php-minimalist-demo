@@ -2,16 +2,10 @@ name: PHP-Minimalist-Demo
 description: PHP Blocklet Demo
 version: 0.1.0
 group: dapp
-publicUrl: /
-adminUrl: ''
-configUrl: ''
-docUrl: ''
 keywords: []
 author:
   name: ArcBlock
 main: .
-capabilities:
-  dynamicPathPrefix: false
 scripts:
   dev: 'php -S 0.0.0.0:${BLOCKLET_PORT:-${PORT:-3000}}'
 did: z8ia33y6eiwaxuGvRHF6fLV48Yko4A63KJGsX
@@ -19,9 +13,16 @@ community: ''
 documentation: ''
 homepage: ''
 license: ''
-charging:
-  price: 0
-interfaces: []
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: /
+    port: BLOCKLET_PORT
+    protocol: tcp
 environments: []
 screenshots: []
-specVersion: 1.0.0
+specVersion: 1.0.1
+timeout:
+  start: 10
+files: []
